@@ -80,20 +80,48 @@ section h3 {
 
 /* Bulleted list */
 .participants ul {
-  list-style: disc;
-  margin: 0 0 0 18px;
+  list-style: none; /* hide bullets */
+  margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 /* Individual participant items styled as subtle chips */
 .participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: #ffffff;
   border: 1px solid #eceff1;
   padding: 6px 8px;
   border-radius: 6px;
-  margin-bottom: 6px;
   font-size: 14px;
   color: #333;
+}
+
+/* Participant email text */
+.participant-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
+}
+
+/* Unregister (delete) button */
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.unregister-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Friendly no-participants message */
