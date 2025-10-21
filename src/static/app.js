@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Build participants HTML (bulleted list or friendly message)
         const participants = details.participants || [];
-        // Build participants HTML with delete buttons
         let participantsHTML = `<div class="participants"><h5>Participants</h5>`;
         if (participants.length) {
           participantsHTML += `<ul>`;
