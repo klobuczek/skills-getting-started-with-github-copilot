@@ -65,13 +65,70 @@ section h3 {
   background-color: #f9f9f9;
 }
 
-.activity-card h4 {
-  margin-bottom: 10px;
-  color: #0066cc;
+/* Participants section inside activity cards */
+.participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e0e0e0;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+}
+
+/* Bulleted list */
+.participants ul {
+  list-style: none; /* hide bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Individual participant items styled as subtle chips */
+.participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #eceff1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Participant email text */
+.participant-email {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 80%;
+}
+
+/* Unregister (delete) button */
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.unregister-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+/* Friendly no-participants message */
+.no-participants {
+  font-style: italic;
+  color: #666;
+  margin: 0;
 }
 
 .form-group {
